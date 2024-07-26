@@ -1,11 +1,13 @@
-package ru.dirtymaster.chatbrotg;
+package ru.dirtymaster.chatbrotg.dto;
 
 import java.util.UUID;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 
 @Data
-public class UserResponse {
+@AllArgsConstructor
+public class User {
     private UUID id;
     private String name;
     private String email;

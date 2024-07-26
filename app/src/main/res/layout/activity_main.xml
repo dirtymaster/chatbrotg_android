@@ -30,9 +30,34 @@
         android:layout_marginBottom="16dp"/>
 
     <Button
-        android:id="@+id/buttonRegister"
+        android:id="@+id/btn_register"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Войти или Зарегистрироваться" />
+
+    <Button
+        android:id="@+id/btn_showAllMessages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Показать все сообщения" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rw_messages"
+        android:layout_width="match_parent"
+        android:layout_height="320dp" />
+
+    <EditText
+        android:id="@+id/et_newMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:hint="Новое сообщение"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btn_sendMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Отправить сообщение" />
 
 </LinearLayout>
